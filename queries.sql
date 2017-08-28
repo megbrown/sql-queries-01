@@ -2,6 +2,7 @@
 
 -- SELECT * FROM genre
 
+
 -- 2. Using the INSERT statement, add one of your favorite artists to the Artist table.
 
 -- INSERT into Artist
@@ -9,7 +10,12 @@
 -- VALUES (29, 'Jenny Lewis', '2006')
 
 
--- Using the INSERT statement, add one, or more, albums by your artist to the Album table.
+-- 3. Using the INSERT statement, add one, or more, albums by your artist to the Album table.
+
+-- INSERT into Album
+-- (AlbumId, Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId)
+-- VALUES(25, 'Voyager', '07/29/2014', 1527, 'Warner Bros.', 29, 7)
+
 
 -- Using the INSERT statement, add some songs that are on that album to the Song table.
 
