@@ -14,10 +14,17 @@
 
 -- INSERT into Album
 -- (AlbumId, Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId)
--- VALUES(25, 'Voyager', '07/29/2014', 1527, 'Warner Bros.', 29, 7)
+-- VALUES (25, 'Voyager', '07/29/2014', 1527, 'Warner Bros.', 29, 7)
 
 
--- Using the INSERT statement, add some songs that are on that album to the Song table.
+-- 4. Using the INSERT statement, add some songs that are on that album to the Song table.
+
+-- INSERT into Song
+-- (SongId, Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId)
+-- VALUES (23, 'Just One of the Guys', 231, '07/29/2014', 7, 29, 25)
+-- INSERT into Song
+-- (SongId, Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId)
+-- VALUES (24, 'Head Underwater', 248, '07/29/2014', 7, 29, 25)
 
 -- Write a SELECT query that provides the song titles, album title, and artist name for all of the data you just entered in. Use the LEFT JOIN keyword sequence to connect the tables, and the WHERE keyword to filter the results to the album and artist you added. Here is some more info on joins that might help.
 
