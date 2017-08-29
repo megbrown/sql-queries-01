@@ -46,6 +46,13 @@
 -- AND s.ArtistId = r.ArtistId
 -- AND r.ArtistName = "Jenny Lewis"
 
+-- SELECT s.title "Song Title", al.title "Album Title", ar.ArtistName "Artist Name"
+-- FROM artist ar, song s
+-- LEFT JOIN album al ON al.albumId = s.albumId
+-- WHERE ar.artistName = "Jenny Lewis"
+-- AND al.artistId = ar.artistId
+
+
 
 
 -- 6. Write a SELECT statement to display how many songs exist for each album.
