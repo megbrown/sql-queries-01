@@ -89,7 +89,13 @@
 -- SELECT MAX(SongLength) AS Duration, title 'Song Name'
 -- FROM song
 
--- Modify the previous query to also display the title of the album.
+
+
+-- 11. Modify the previous query to also display the title of the album.
+
+-- SELECT MAX(SongLength) AS Duration, s.title 'Song Name', a.title "Album Name"
+-- FROM song s, album a
+-- WHERE s.albumId = a.albumId
 
 
 
