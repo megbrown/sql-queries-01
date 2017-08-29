@@ -60,11 +60,16 @@
 -- 7. Write a SELECT statement to display how many songs exist for each artist.
 -- You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 
--- SELECT COUNT(SongId)
+-- SELECT COUNT(SongId) AS 'song count'
 -- FROM song
 -- GROUP BY artistId
 
--- Write a SELECT statement to display how many songs exist for each genre. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
+-- 8. Write a SELECT statement to display how many songs exist for each genre.
+-- You'll need to use the COUNT() function and the GROUP BY keyword sequence.
+
+-- SELECT COUNT(SongId) AS 'song count'
+-- FROM song
+-- GROUP BY genreId
 
 -- Using MAX() function, write a select statement to find the album with the longest duration. The result should display the album title and the duration.
 
