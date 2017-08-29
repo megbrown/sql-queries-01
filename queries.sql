@@ -54,31 +54,33 @@
 
 
 
-
 -- 6. Write a SELECT statement to display how many songs exist for each album.
 -- You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 
--- SELECT COUNT(SongId) AS 'song count'
--- FROM song
--- GROUP BY albumId
+-- SELECT COUNT(s.SongId) AS 'Song Count', al.title AS "Album"
+-- FROM song s, album al
+-- WHERE al.albumId = s.albumId
+-- GROUP BY s.albumId
 
 
 
 -- 7. Write a SELECT statement to display how many songs exist for each artist.
 -- You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 
--- SELECT COUNT(SongId) AS 'song count'
--- FROM song
--- GROUP BY artistId
+-- SELECT COUNT(s.songId) AS 'song count', ar.artistName
+-- FROM song s, artist ar
+-- WHERE ar.artistId = s.artistId
+-- GROUP BY ar.artistId
 
 
 
 -- 8. Write a SELECT statement to display how many songs exist for each genre.
 -- You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 
--- SELECT COUNT(SongId) AS 'song count'
--- FROM song
--- GROUP BY genreId
+-- SELECT COUNT(SongId) AS 'song count', g.label
+-- FROM song s, genre g
+-- WHERE s.genreID = g.genreId
+-- GROUP BY s.genreId
 
 
 
@@ -103,10 +105,3 @@
 -- SELECT MAX(SongLength) AS Duration, s.title 'Song Name', a.title "Album Name"
 -- FROM song s, album a
 -- WHERE s.albumId = a.albumId
-
-
-
-
-
-
-
