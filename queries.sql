@@ -56,7 +56,13 @@
 -- GROUP BY albumId
 
 
--- Write a SELECT statement to display how many songs exist for each artist. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
+
+-- 7. Write a SELECT statement to display how many songs exist for each artist.
+-- You'll need to use the COUNT() function and the GROUP BY keyword sequence.
+
+-- SELECT COUNT(SongId)
+-- FROM song
+-- GROUP BY artistId
 
 -- Write a SELECT statement to display how many songs exist for each genre. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 
